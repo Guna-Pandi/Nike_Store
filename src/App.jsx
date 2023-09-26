@@ -1,7 +1,12 @@
 import "./App.css";
+import { Hero } from "./components";
 
 function App() {
-  return <h1 className="text-3xl font-bold underline">Hello world!</h1>;
+  return (
+    <>
+      <Hero />
+    </>
+  );
 }
 
 export default App;
