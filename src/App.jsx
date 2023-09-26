@@ -1,11 +1,12 @@
 import "./App.css";
 import { Hero } from "./components";
+import { heroapi } from "./data/data.js";
 
 function App() {
   return (
-    <>
-      <Hero />
-    </>
+    <main>
+       <Hero heroapi={heroapi} />
+    </main>
   );
 }
 
