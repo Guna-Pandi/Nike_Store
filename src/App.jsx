@@ -1,15 +1,22 @@
-import { FlexContent, Hero, Sales } from "./components";
-import { heroapi, popularsales, toprateslaes,highlight,sneaker } from "./data/data.js";
+import { FlexContent, Hero, Sales, Stories } from "./components";
+import {
+  heroapi,
+  popularsales,
+  toprateslaes,
+  highlight,
+  sneaker,
+  story,
+} from "./data/data.js";
 
 function App() {
   return (
-    <main className=" flex flex-col gap-16 relative">
+    <main className=" flex flex-col gap-16 relative bg-[#6e6d6d]">
       <Hero heroapi={heroapi} />
       <Sales endpoint={popularsales} ifExists />
-      <FlexContent endpoint={highlight} ifExists/>
+      <FlexContent endpoint={highlight} ifExists />
       <Sales endpoint={toprateslaes} />
       <FlexContent endpoint={sneaker} />
-     
+      <Stories story={story} />
     </main>
   );
 }
