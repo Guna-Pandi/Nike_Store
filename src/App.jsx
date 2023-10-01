@@ -20,7 +20,7 @@ function App() {
         <FlexContent endpoint={sneaker} />
         <Stories story={story} />
       </main>
-      <Footer footer={footerAPI}/>
+      <Footer footerAPI={footerAPI} />
     </>
   );
 }
